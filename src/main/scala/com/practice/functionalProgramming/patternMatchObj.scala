@@ -28,6 +28,13 @@ object patternMatchObj {
   println(s"genericPatternMatchingFunc: ${genericPatternMatchingFunc("a+", str)}")
   println(s"genericPatternMatchingFunc: ${genericPatternMatchingFunc("a+", str)}")
 
+  def findFirstWordsFunc(string: String) = {
+    val pattern = "\\w+".r
+    pattern.findFirstIn(string)
+  }
+
+  println(s"findFirstWordsFunc: ${findFirstWordsFunc(words)}")
+
 
 }
 
