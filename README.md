@@ -84,6 +84,16 @@ list.prepended(11)
 ```
 
 ---
+## How to flatten or extend a List?
+### **flatten**
+```scala
+list.flatten
+```
+### **extend**
+```scala
+listA.extend(listB)
+e.g. list A: List(1,2,3) & List B: List(4,5,6)
+outputList : List(1,2,3,4,5,6)
 ```
 
 ### **Usage**
