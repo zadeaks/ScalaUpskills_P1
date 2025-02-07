@@ -116,3 +116,15 @@ outputList : List(1,2,3,4,5,6)
 | **Generic Functions** | Functions with type parameters (`def f[T](x: T)`) |
 | **Inline Functions (Scala 3)** | Compile-time optimizations (`inline def`) |
 | **Context Functions (Scala 3)** | Implicit dependency injection (`using`) |
+
+
+### **Curried Function**
+**How It Works:**
+1. The function now takes **one argument at a time**.
+2. The first parameter list `(x: Int)` returns another function that takes `(y: Int)`.
+3. When both arguments are provided, it returns `x + y`.
+```
+val sum = (x: Int, y: Int) => x + y
+val curriedSum = sum.curried
+println(curriedSum(3)(4))  // Output: 7
+```
