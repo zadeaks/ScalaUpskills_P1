@@ -100,4 +100,19 @@ outputList : List(1,2,3,4,5,6)
 - Save the above content as `README.md`.
 - It follows Markdown syntax and will render nicely on GitHub or any Markdown viewer.
 
-Let me know if you need further improvements!
+### **Types of Function in Scala**
+| Function Type | Description |
+|--------------|-------------|
+| **Function Literals** | Anonymous functions (`(x: Int) => x * 2`) |
+| **Named Functions** | Standard `def` functions |
+| **Higher-Order Functions** | Accept or return other functions |
+| **Curried Functions** | Multiple parameter lists (`def f(a)(b)`) |
+| **Recursive Functions** | Functions that call themselves |
+| **Tail-Recursive Functions** | Optimized recursion (`@tailrec`) |
+| **Call-By-Name** | Arguments evaluated lazily (`=> Type`) |
+| **Closures** | Functions capturing free variables |
+| **Partially Applied** | Fix some parameters (`f(x, _: Int)`) |
+| **Partial Functions** | Functions that handle only certain inputs |
+| **Generic Functions** | Functions with type parameters (`def f[T](x: T)`) |
+| **Inline Functions (Scala 3)** | Compile-time optimizations (`inline def`) |
+| **Context Functions (Scala 3)** | Implicit dependency injection (`using`) |
