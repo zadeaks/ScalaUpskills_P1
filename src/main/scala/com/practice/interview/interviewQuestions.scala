@@ -1,6 +1,4 @@
-package com.practice
-
-import com.practice.functionalProgramming.reduceObj.Product
+package com.practice.interview
 
 import java.io.File
 
